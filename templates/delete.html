@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Details</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/764b6ef2c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-object-cover bg-center bg-fixed bg-opacity-95 bg-white w-full m-0 p-0 font-poppins"
+    style="background-image: url('/static/images/background.png')"
+  >
+    <div class="container mx-auto my-12">
+      <div class="header flex justify-between p-4">
+        <div class="logo text-xl sm:text-2xl xl:text-3xl font-bold">
+          <h1>Address <span class="text-violet">Book</span></h1>
+        </div>
+        <div class="flex justify-between">
+          <a
+            href="/"
+            class="flex mx-5 py-2 px-4 rounded-lg bg-violet text-white hover:bg-medium_violet font-semibold"
+          >
+            Home Page
+          </a>
+        </div>
+      </div>
+      <hr class="h-px my-1 bg-silver border-0" />
+      <div class="flex justify-center mt-40">
+        <div
+          class="relative p-6 bg-white rounded-lg shadow-lg shadow-silver md:w-96"
+        >
+          <!-- Content -->
+          <h1 class="text-xl font-semibold mb-4">Delete Details</h1>
+          <form action="/deleterecord" method="post">
+            <div class="mb-4">
+              <input
+                type="text"
+                name="id"
+                class="border px-4 py-2 w-full mb-3"
+                placeholder="Enter your Id"
+              /><button
+                class="px-4 py-2 bg-strawberry hover:bg-rose_medium text-white rounded"
+              >
+                <input type="submit" value="Delete" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

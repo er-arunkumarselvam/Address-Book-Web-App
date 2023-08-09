@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Save</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/764b6ef2c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-object-cover bg-center bg-fixed bg-opacity-95 bg-white w-full m-0 p-0 font-poppins"
+    style="background-image: url('/static/images/background.png')"
+  >
+    <div class="container mx-auto my-12">
+      <div class="header flex justify-between p-4">
+        <div class="logo text-xl sm:text-2xl xl:text-3xl font-bold">
+          <h1>Address <span class="text-violet">Book</span></h1>
+        </div>
+      </div>
+      <hr class="h-px my-1 bg-silver border-0" />
+      <div class="flex justify-center items-center mt-60 mb-20">
+        <div
+          class="bg-palegrey text-darkgrey p-6 rounded-md shadow-lg shadow-darkgrey text-center"
+        >
+          <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            {{message}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center mt-20">
+      <a
+        href="/view"
+        class="flex py-2 px-4 rounded-lg bg-emerald text-white hover:bg-darkmintgreen font-semibold"
+      >
+        View the Contact List
+      </a>
+    </div>
+  </body>
+</html>

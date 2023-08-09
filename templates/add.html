@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Contact</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/764b6ef2c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-white w-full m-0 p-0 font-poppins">
+    <div class="container mx-auto my-12">
+      <div class="header flex justify-between p-4">
+        <div class="logo text-xl sm:text-2xl xl:text-3xl font-bold">
+          <h1>Address <span class="text-violet">Book</span></h1>
+        </div>
+      </div>
+      <hr class="h-px my-1 bg-silver border-0" />
+      <div class="content px-24 pt-24 pb-6">
+        <h3 class="text-violet font-semibold text-2xl">Contact Details</h3>
+      </div>
+      <div class="main flex justify-between px-24">
+        <div class="contact-details grid grid-cols-[30%] w-full h-64">
+          <form action="/savedetails" method="post">
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="Enter a name"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr class="mt-5">
+                <td>
+                  <input
+                    type="text"
+                    name="address"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="Address"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="city"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="City"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="pincode"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="Pincode"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="mobile"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="Phone Number"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    class="w-101 mt-5 h-12 px-4 py-2 bg-palegrey border-none text-darkgrey outline-none focus:bg-white focus:outline-2 focus:outline-palegrey transition-all duration-300 rounded-md"
+                    placeholder="Mail Id"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="submit"
+                    value="Add Member"
+                    class="px-4 mt-5 py-2 bg-violet text-white font-medium rounded-md hover:bg-medium_violet"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div
+          class="image-section grid grid-cols-[70%] justify-center items-center w-full h-64"
+        >
+          <img
+            src="./static/images/image2.svg"
+            class="w-100 mx-auto scale-150"
+            alt="address location"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

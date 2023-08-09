@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Details</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/764b6ef2c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-white w-full m-0 p-0 font-roboto">
+    <div class="container mx-auto my-12">
+      <div class="header flex justify-between p-4">
+        <div class="logo text-xl sm:text-2xl xl:text-3xl font-bold">
+          <h1>Address <span class="text-violet">Book</span></h1>
+        </div>
+        <div class="flex justify-between">
+          <a
+            href="/add"
+            class="flex mx-5 py-2 px-4 rounded-lg bg-emerald text-white hover:bg-darkmintgreen font-semibold"
+          >
+            Add Contact
+          </a>
+          <a
+            href="/delete"
+            class="flex py-2 px-4 rounded-lg bg-strawberry text-white hover:bg-rose_medium font-semibold"
+          >
+            Delete Record
+          </a>
+        </div>
+      </div>
+      <hr class="h-px my-1 bg-silver border-0" />
+    </div>
+    <div class="flex justify-center items-center mt-24">
+      <table
+        class="shadow-2xl text-base md:text-lg font-normal border-2 border-cyan-200 w-10/12 overflow-hidden"
+      >
+        <thead class="text-white font-semibold">
+          <tr>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Id
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Name
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Address
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              City
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Pincode
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Mobile
+            </th>
+            <th class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3 bg-violet">
+              Email
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-center text-darkgrey">
+          {% for row in rows %}
+          <tr
+            class="bg-pale_purple text-center hover:bg-white hover:font-semibold hover:text-violet cursor-pointer duration-300 border-b"
+          >
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["id"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["name"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["address"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["city"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["pincode"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["mobile"]}}
+            </td>
+            <td class="py-1 px-1 md:py-2 md:px-2lg:py-3 lg:px-3">
+              {{row["email"]}}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="flex justify-center items-center mt-20">
+      <a
+        href="/"
+        class="flex py-2 px-4 rounded-lg bg-blue text-white hover:bg-light_blue font-semibold"
+      >
+        Go back to Home Page
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/764b6ef2c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-object-cover bg-center bg-fixed bg-opacity-95 bg-white w-full m-0 p-0 font-poppins"
+    style="background-image: url('/static/images/background.png')"
+  >
+    <div class="container mx-auto my-12">
+      <div class="header flex justify-between p-4">
+        <div class="logo text-xl sm:text-2xl xl:text-3xl font-bold">
+          <h1>Address <span class="text-violet">Book</span></h1>
+        </div>
+      </div>
+      <hr class="h-px my-1 bg-silver border-0" />
+      <!-- Image Section -->
+      <img
+        src="/static/images/image1.svg"
+        class="w-160 mx-auto"
+        alt="address location"
+      />
+      <div class="sm:flex justify-between w-4/12 mx-auto my-5">
+        <a
+          href="/add"
+          class="block mb-3 text-sm sm:text-base sm:flex py-2 px-4 rounded-lg bg-violet text-white hover:bg-medium_violet font-semibold"
+        >
+          Add Contact
+        </a>
+        <a
+          href="/view"
+          class="block mb-3 text-sm sm:text-base sm:flex py-2 px-4 rounded-lg bg-emerald text-white hover:bg-darkmintgreen font-semibold"
+        >
+          Show All Records
+        </a>
+        <a
+          href="/delete"
+          class="block mb-3 text-sm sm:text-base sm:flex py-2 px-4 rounded-lg bg-strawberry text-white hover:bg-rose_medium font-semibold"
+        >
+          Delete Record
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
