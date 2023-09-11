@@ -1,5 +1,5 @@
 # Address Book Web Application
-[![Framework](https://img.shields.io/badge/Flask-2.3.3-black)](https://flask.palletsprojects.com/en/2.3.x/quickstart/)
+[![Framework](https://img.shields.io/badge/Flask-2.3.3-161616)](https://flask.palletsprojects.com/en/2.3.x/quickstart/)
 [![Framework](https://img.shields.io/badge/Tailwind_CSS-v3.3.1-skyblue)](https://tailwindcss.com/)
 [![Framework](https://img.shields.io/badge/SQLite-v3.33.0-blue)](https://www.sqlite.org/index.html)
 
