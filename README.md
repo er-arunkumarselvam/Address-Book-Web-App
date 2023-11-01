@@ -7,6 +7,10 @@ The Simple Address Book app helps you do important things easily, like adding, r
 
 ![image](https://github.com/er-arunkumarselvam/Address-Book-Web-App/assets/113919924/d4b474e2-0cd6-4e31-a1de-a0370a0bcf72)
 
+__Demo Link__
+
+[![Watch the video](https://img.youtube.com/vi/K26_qAhSGSw/sddefault.jpg)](https://youtu.be/K26_qAhSGSw)
+
 __Blog Link__:https://arunkumarselvamblog.wordpress.com/projects/
 # Images
 
